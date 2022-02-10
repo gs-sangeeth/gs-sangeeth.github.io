@@ -7,15 +7,15 @@
 /* Custom Properties, update these for your own design */
 
 :root {
-  --ff-primary: "Source Sans Pro", sans-serif;
+  --ff-primary: "Press Start 2P", cursive;
   --ff-secondary: "Source Code Pro", monospace;
 
   --fw-reg: 300;
   --fw-bold: 900;
 
   --clr-light: #fff;
-  --clr-dark: #303030;
-  --clr-accent: #16e0bd;
+  --clr-dark: #3b1753;
+  --clr-accent: #f589e1;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -31,7 +31,7 @@
     --fs-h1: 4.5rem;
     --fs-h2: 3.75rem;
     --fs-h3: 1.5rem;
-    --fs-body: 1.125rem;
+    --fs-body: 1rem;
   }
 }
 
