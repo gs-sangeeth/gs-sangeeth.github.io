@@ -14,8 +14,8 @@
   --fw-bold: 900;
 
   --clr-light: #fff;
-  --clr-dark: #3b1753;
-  --clr-accent: #f589e1;
+  --clr-dark: #141414;
+  --clr-accent: #f7f33f;
 
   --fs-h1: 2rem;
   --fs-h2: 1.25rem;
@@ -427,7 +427,7 @@ header {
   color: var(--clr-accent);
   text-align: center;
   padding: 2.5em 0;
-  font-size: var(--fs-h3);
+  font-size: var(--fs-body);
 }
 
 .footer a {
