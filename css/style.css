@@ -133,7 +133,8 @@ h3 {
   margin-bottom: 1em;
 }
 
-.section__subtitle--work {
+.section__subtitle--work,
+.section__subtitle--artwork {
   color: var(--clr-accent);
   font-weight: var(--fw-bold);
   margin-bottom: 2em;
@@ -296,7 +297,7 @@ header {
 
 .my-services {
   background-color: var(--clr-dark);
-  background-image: url(../img/services-bg.jpg);
+  /* background-image: url(../img/services-bg.jpg); */
   background-size: cover;
   /* background-blend-mode: multiply; */
   color: var(--clr-light);
@@ -412,6 +413,11 @@ header {
 .portfolio__item:focus .portfolio__img {
   transform: scale(1.2);
   opacity: 0.5;
+}
+
+/* Artwork */
+.artwork {
+  text-align: center;
 }
 
 /* footer */
