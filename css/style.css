@@ -230,7 +230,7 @@ header {
 .hamburger::after {
   background: var(--clr-dark);
   width: 2em;
-  height: 3px;
+  height: 3.5px;
   border-radius: 1em;
   transition: transform 250ms ease-in-out;
 }
@@ -303,6 +303,7 @@ header {
   /* background-blend-mode: multiply; */
   color: var(--clr-light);
   text-align: center;
+  position: relative;
 }
 
 .section__title--services {
@@ -397,7 +398,7 @@ header {
 }
 
 .portfolio__item {
-  background: var(--clr-accent);
+  background: var(--clr-dark);
   overflow: hidden;
 }
 
@@ -414,6 +415,10 @@ header {
 .portfolio__item:focus .portfolio__img {
   transform: scale(1.2);
   opacity: 0.5;
+}
+
+.portfolio--game {
+  grid-gap: 2em;
 }
 
 /* Artwork */
@@ -478,4 +483,66 @@ header {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* .container {
+  width: 100%;
+  height: 50px;
+  background: #101010;
+  overflow: hidden;
+}
+
+canvas {
+  position: relative;
+} */
+
+.wave2 {
+  height: 30px;
+  width: 100%;
+}
+
+.wave2 {
+  -webkit-animation: wave-animation1 6.3s infinite linear; /* Safari 4+ */
+  -moz-animation: wave-animation1 6.3s infinite linear; /* Fx 5+ */
+  -o-animation: wave-animation1 6.3s infinite linear; /* Opera 12+ */
+  animation: wave-animation1 6.3s infinite linear; /* IE 10+ */
+}
+
+@-webkit-keyframes wave-animation1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1601px 0;
+  }
+}
+@-moz-keyframes wave-animation1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1601px 0;
+  }
+}
+@-o-keyframes wave-animation1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1601px 0;
+  }
+}
+@keyframes wave-animation1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1601px 0;
+  }
+}
+
+.wave2 {
+  background: url("http://www.templates-preview.com/bootstrap-templates/300111854/images/wave2.png")
+    0 0 repeat-x;
+  filter: brightness(0) opacity(0.92);
 }
