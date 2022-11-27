@@ -435,11 +435,12 @@ header {
 /* footer */
 
 .footer {
-  background: #111;
-  color: var(--clr-accent);
+  background: var(--clr-accent);
+  color: var(var(--clr-dark));
   text-align: center;
-  padding: 2.5em 0;
+  padding: 1em 0;
   font-size: var(--fs-body);
+  font-family: var(--ff-secondary);
 }
 
 .footer a {
@@ -464,7 +465,7 @@ header {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 2em 0 0;
+  margin: 1em 0 0;
   padding: 0;
   font-size: var(--fs-h3);
 }
@@ -552,3 +553,40 @@ canvas {
     0 0 repeat-x;
   filter: brightness(0) opacity(0.92);
 }
+
+.arcadewall{
+  background: #111;
+}
+
+.arcade {
+  position: relative;
+  float:left;
+  display:block;
+}
+
+.bit {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+
+  background: rgba(255, 255, 100, .8);
+  border: 1px solid rgba(0, 0, 0, 0);
+
+  transition:all 380ms ease-in-out 0s;
+}
+.bit--active {
+  background: rgba(0, 0, 0, .7);
+}
+body:hover .avatar .bit {
+  transform:rotate(45deg);
+  transition:all 380ms ease-in-out 0s;
+}
+
+.threeD {
+  background: var(--clr-dark);
+  color: var(--clr-light);
+}
+
