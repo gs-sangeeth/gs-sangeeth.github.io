@@ -298,7 +298,13 @@ header {
     left: -1.5em;
     width: calc(100% + 1.5em);
   }
+
+.project{
+    padding-top: 4.9rem;
+  }
 }
+
+
 
 /*  My services section  */
 
@@ -603,4 +609,13 @@ body:hover .avatar .bit {
 .portfolio-item-individual a{
   margin: auto;
 }
+
+.btn-holder{
+  width: 100%;
+    display: flex;
+    justify-content: center;
+}
  
+.col-2 {width: 16.66%;}
+
+
