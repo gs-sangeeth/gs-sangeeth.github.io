@@ -600,3 +600,7 @@ body:hover .avatar .bit {
   color: var(--clr-light);
 }
 
+.portfolio-item-individual a{
+  margin: auto;
+}
+ 
