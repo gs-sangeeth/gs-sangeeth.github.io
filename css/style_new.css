@@ -553,16 +553,19 @@ header {
     display: block;
 }
 
-.portfolio-item-individual .ytvideo{
+.ytvideo{
     margin-top: 10px;
     max-width: 100%;
     display: block;
+
 }
 
-.portfolio-item-individual .ytvideoIframe{
+.ytvideoIframe{
     margin-top: 10px;
     max-width: 100%;
-    display: block;
+    max-height: max-content;
+    width: 960px;
+    height: 540px;
 }
 
 /* .container {
