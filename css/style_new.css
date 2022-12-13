@@ -553,6 +553,18 @@ header {
     display: block;
 }
 
+.portfolio-item-individual .ytvideo{
+    margin-top: 10px;
+    max-width: 100%;
+    display: block;
+}
+
+.portfolio-item-individual .ytvideoIframe{
+    margin-top: 10px;
+    max-width: 100%;
+    display: block;
+}
+
 /* .container {
   width: 100%;
   height: 50px;
@@ -673,9 +685,9 @@ body:hover .avatar .bit {
     justify-content: center;
 }
 
-
-
-
+.new {
+    font-size: var(--fs-nav);
+}
 
 
 @media (max-width: 1200px) {
