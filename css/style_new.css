@@ -460,6 +460,11 @@ header {
     overflow: hidden;
 }
 
+.portfolio__resume {
+    background: var(--clr-dark);
+    overflow: hidden;
+}
+
 .portfolio__img {
     transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
 }
