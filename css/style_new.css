@@ -12,9 +12,9 @@
     --fw-reg: 300;
     --fw-bold: 900;
 
-    --clr-light: #bedfed;
-    --clr-dark: #180e15;
-    --clr-accent: #b8d17e;
+    --clr-light: #ffffff;
+    --clr-dark: #121213;
+    --clr-accent: #f46767;
 
     --fs-h1: 2.25rem;
     --fs-h2: 1.75rem;
@@ -725,6 +725,6 @@ body:hover .avatar .bit {
     }
 
     header {
-        background-color: white;
+        background-color: var(--clr-light);
     }
 }
