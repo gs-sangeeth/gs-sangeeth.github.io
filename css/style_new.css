@@ -453,11 +453,39 @@ header {
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    
 }
 
 .portfolio__item {
-    background: var(--clr-dark);
+    background: var(--clr-accent);
     overflow: hidden;
+    color: var(--clr-dark);
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+
+
+.portfolio__item h3{
+    margin-top: 14px;
+}
+
+.portfolio__item ul{
+    color: var(--clr-light);
+    font-size: var(--fs-body);
+    font-family: var(--ff-tertiary);
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.portfolio__item li{
+    background-color: var(--clr-dark);
+    color: var(--clr-accent);
+    border-radius: 100px;
+    padding: 2px 22px;
 }
 
 .portfolio__resume {
@@ -469,7 +497,7 @@ header {
     transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
 }
 
-.portfolio__item:focus {
+/* .portfolio__item:focus {
     position: relative;
     z-index: 2;
 }
@@ -477,8 +505,8 @@ header {
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
     transform: scale(1.2);
-    /* opacity: 0.5; */
-}
+    
+} */
 
 .portfolio--game {
     grid-gap: 2em;
