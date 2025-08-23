@@ -18,7 +18,8 @@
 
     --fs-h1: 2.5rem;
     --fs-h2: 1.8rem;
-    --fs-h3: .7rem;
+    --fs-h3: 1rem;
+    --fs-h4: .7rem;
     --fs-body: .6rem;
     --fs-nav: .95rem;
 
@@ -53,7 +54,8 @@
     :root {
         --fs-h1: 4.5rem;
         --fs-h2: 2.5rem;
-        --fs-h3: 1.2rem;
+        --fs-h3: 1.5rem;
+        --fs-h4: 1.2rem;
         --fs-body: 1rem;
     }
 }
@@ -97,7 +99,7 @@ strong {
 
 .btn {
     display: inline-block;
-    padding: 1em 6em;
+    padding: 1em 3em;
     background: var(--clr-accent);
     color: var(--clr-dark);
     text-decoration: none;
@@ -148,7 +150,7 @@ h3 {
 
 .section__subtitle {
     margin: 0;
-    font-size: var(--fs-h3);
+    font-size: var(--fs-h4);
 }
 
 .section__subtitle--intro,
@@ -453,24 +455,43 @@ header {
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    
+
 }
 
 .portfolio__item {
-    background: var(--clr-accent);
+    /* background: var(--clr-accent); */
     overflow: hidden;
-    color: var(--clr-dark);
+    color: var(--clr-accent);
     text-decoration: none;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 .5em 1em 0 rgba(255, 255, 255, 0.156);
+    text-align: start;
 }
 
-
-
-.portfolio__item h3{
-    margin-top: 14px;
+.text__content{
+    padding: 0 1em;
 }
 
-.portfolio__item ul{
+.text__content__description{
+    margin-top: .5em;
+    font-family: var(--ff-tertiary);
+    line-height: normal;
+}
+
+.portfolio__art {
+    /* background: var(--clr-accent); */
+    overflow: hidden;
+}
+
+.portfolio__item h3 {
+    margin-top: 1em;
+    color: var(--clr-light);
+}
+
+.portfolio__item ul {
+    margin: 1em 0 1em 0;
     color: var(--clr-light);
     font-size: var(--fs-body);
     font-family: var(--ff-tertiary);
@@ -479,11 +500,12 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 5px;
+    padding: 0px;
 }
 
-.portfolio__item li{
-    background-color: var(--clr-dark);
-    color: var(--clr-accent);
+.portfolio__item li {
+    background-color: var(--clr-accent);
+    color: var(--clr-dark);
     border-radius: 100px;
     padding: 2px 22px;
 }
@@ -497,16 +519,16 @@ header {
     transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
 }
 
-/* .portfolio__item:focus {
+.portfolio__art:focus {
     position: relative;
     z-index: 2;
 }
 
-.portfolio__img:hover,
-.portfolio__item:focus .portfolio__img {
+.portfolio__art:hover .portfolio__img {
     transform: scale(1.2);
-    
-} */
+    overflow: hidden;
+
+}
 
 .portfolio--game {
     grid-gap: 2em;
