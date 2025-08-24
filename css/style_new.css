@@ -468,6 +468,13 @@ header {
     flex-direction: column;
     box-shadow: 0 .5em 1em 0 rgba(255, 255, 255, 0.156);
     text-align: start;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;;
+}
+
+.portfolio__item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 .2em 1em 0 var(--clr-accent);
 }
 
 .text__content{
