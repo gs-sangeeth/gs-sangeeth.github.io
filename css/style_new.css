@@ -460,6 +460,12 @@ header {
 
 }
 
+.art_gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+}
+
 
 @media (min-width: 1200px) {
     .portfolio {
