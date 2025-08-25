@@ -488,8 +488,8 @@ header {
 }
 
 .portfolio__item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 .2em 1em 0 var(--clr-accent);
+    transform: scale(1.1);
+    box-shadow: 0 .2em 1.5em 0 var(--clr-accent);
 }
 
 .text__content {
