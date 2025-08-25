@@ -452,10 +452,24 @@ header {
     text-align: center;
 }
 
+
+
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
+}
+
+
+@media (min-width: 1200px) {
+    .portfolio {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    }
+
+    .portfolio--game {
+        padding: 0em 2em;
+    }
 }
 
 .portfolio__item {
@@ -469,7 +483,8 @@ header {
     box-shadow: 0 .2em 1em 0 rgba(255, 255, 255, 0.156);
     text-align: start;
     cursor: pointer;
-    transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;;
+    transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+    ;
 }
 
 .portfolio__item:hover {
@@ -477,11 +492,11 @@ header {
     box-shadow: 0 .2em 1em 0 var(--clr-accent);
 }
 
-.text__content{
+.text__content {
     padding: 0 1em;
 }
 
-.text__content__description{
+.text__content__description {
     margin-top: .5em;
     font-family: var(--ff-tertiary);
     line-height: normal;
@@ -538,7 +553,7 @@ header {
 }
 
 .portfolio--game {
-    grid-gap: 2em;
+    grid-gap: 4em;
 }
 
 /* Artwork */
