@@ -138,6 +138,7 @@ h3 {
 
 .section__title {
     margin-bottom: 0.25em;
+    margin-top: .5em;
 }
 
 .section__title--intro {
@@ -301,7 +302,7 @@ header {
 }
 
 .intro__img {
-    box-shadow: var(--bs);
+    /* box-shadow: var(--bs); */
 }
 
 .section__subtitle--intro {
@@ -325,23 +326,33 @@ header {
 
     .intro__img {
         grid-area: img;
-        min-width: 250px;
+        min-width: 200px;
         position: relative;
         z-index: 2;
     }
 
     .section__subtitle--intro {
         align-self: start;
-        grid-column: -1 / 1;
+        /* grid-column: -1 / 1; */
         grid-row: 2;
-        text-align: right;
-        position: relative;
+        /* text-align: right; */
+        /* position: relative; */
         left: -.8em;
-        width: calc(100% + 1.5em);
+        /* width: calc(100% + 1.5em); */
     }
 
     .project {
         padding-top: 4.9rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .intro__img {
+        display: none;
+    }
+
+    .about-me__img{
+        display: none;
     }
 }
 
