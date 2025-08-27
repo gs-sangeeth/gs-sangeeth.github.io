@@ -92,7 +92,7 @@ strong {
 
 :focus {
     outline: 3px solid var(--clr-accent);
-    outline-offset: 3px;
+    outline-offset: 6px;
 }
 
 /* Buttons */
@@ -233,7 +233,7 @@ header {
     cursor: pointer;
     position: absolute;
     right: 1em;
-    top: 1em;
+    top: 2em;
     z-index: 1000;
     display: none;
 }
@@ -273,8 +273,8 @@ header {
 .hamburger::before,
 .hamburger::after {
     background: var(--clr-dark);
-    width: 2em;
-    height: 3.5px;
+    width: 3.5em;
+    height: 5px;
     border-radius: 1em;
     transition: transform 250ms ease-in-out;
 }
@@ -288,11 +288,11 @@ header {
 }
 
 .hamburger::before {
-    top: 6px;
+    top: 8px;
 }
 
 .hamburger::after {
-    bottom: 6px;
+    bottom: 8px;
 }
 
 /*  Intro section  */
