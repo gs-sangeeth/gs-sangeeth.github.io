@@ -309,6 +309,17 @@ header {
     display: inline-block;
 }
 
+.intro_text {
+        
+        text-align: left;
+        background-color: var(--clr-dark);
+        border-radius: 20px;
+        color: var(--clr-light);
+        margin-top: 10px;
+        padding: 3px 15px 3px 15px;
+
+    }
+
 @media (min-width: 1200px) {
 
 
@@ -320,8 +331,21 @@ header {
         grid-column-gap: 1em;
         grid-template-areas:
             "img title"
-            "img subtitle";
+            "img subtitle"
+            "text text";
         grid-template-columns: min-content max-content;
+    }
+
+    .intro_text {
+        grid-area: text;
+        max-width: 800px;
+        text-align: center;
+        background-color: var(--clr-dark);
+        border-radius: 20px;
+        color: var(--clr-light);
+        margin-top: 10px;
+        padding: 0 20px 0 20px;
+
     }
 
     .intro__img {
