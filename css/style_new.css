@@ -381,6 +381,18 @@ header {
     }
 }
 
+@media (max-width: 960px) {
+    .playable{
+        display: none;
+    }
+}
+
+@media (min-width: 960px) {
+    .playable-widget{
+        display: none;
+    }
+}
+
 
 
 /*  My services section  */
